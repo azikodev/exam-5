@@ -70,12 +70,12 @@ function createCard(item) {
   card.innerHTML = `
   ${image}
   <div class="p-4">
-  <h3 class="text-lg font-semibold">${cardTitle}</h3>
-  <p class="text-sm text-gray-500">${item.owner.firstName} ${item.owner.lastName}</p>
+  <h3 class="text-lg  font-semibold dark:text-white">${cardTitle}</h3>
+  <p class="text-sm text-gray-500 ">${item.owner.firstName} ${item.owner.lastName}</p>
   <form class="delete-form">
-  <button  class="text-red-500 delete-btn ">Delete</button>
+  <button  class="text-red-500 delete-btn  text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 mt-2 ">Delete</button>
   </form>
-  <a href="details.html?id=${item.id}" class="text-blue-500 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 =>">View Details</a>
+  <a href="details.html?id=${item.id}" class="text-blue-500 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Details =></a>
   </div>
   `;
   card.querySelector('.delete-btn').addEventListener('click', () => {
