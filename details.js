@@ -61,6 +61,7 @@ async function fetchPostDetails() {
                     <p class="text-sm text-gray-500">Published by ${card.owner.firstName} ${card.owner.lastName} on ${formatDate(card.publishDate)}</p>
                     <p class="text-sm text-gray-500">Likes: ${card.likes}</p>
                     <p class="text-sm text-gray-500">Tags: ${card.tags[0]}</p>
+                    <a class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2  " href="./index.html">Back to</a>
                 `;
         baseContainer.classList.add('loaded'); // Add loaded class to hide loader
     } catch (error) {
