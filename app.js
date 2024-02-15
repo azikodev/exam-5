@@ -64,7 +64,7 @@ function createCard(item) {
   const card = document.createElement('div');
   card.classList.add('cardPost', 'border', 'border-gray-300', 'rounded-md', 'overflow-hidden');
 
-  const image = item.image ? `<img src="${item.image}" alt="${item.text}" class="w-full h-40 ">` : '';
+  const image = item.image ? `<img src="${item.image}" alt="${item.text}" class="w-full h-40 image-for-rs">` : '';
   const cardTitle = item.text.length > 50 ? item.text.substring(0, 50) + '...' : item.text;
 
   card.innerHTML = `
@@ -73,7 +73,7 @@ function createCard(item) {
   <h3 class="text-lg font-semibold">${cardTitle}</h3>
   <p class="text-sm text-gray-500">${item.owner.firstName} ${item.owner.lastName}</p>
   <form class="delete-form">
-  <button type="button" class="text-red-500 delete-btn ">Delete</button>
+  <button  class="text-red-500 delete-btn ">Delete</button>
   </form>
   <a href="details.html?id=${item.id}" class="text-blue-500 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 =>">View Details</a>
   </div>
