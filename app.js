@@ -64,7 +64,7 @@ function createCard(item) {
   const card = document.createElement('div');
   card.classList.add('cardPost', 'border', 'border-gray-300', 'rounded-md', 'overflow-hidden');
 
-  const image = item.image ? `<img src="${item.image}" alt="${item.text}" class="w-full h-40 image-for-rs">` : '';
+  const image = item.image ? `<img src="${item.image}" alt="${item.text}" class="w-full h-40 image-for-rs object-cover">` : '';
   const cardTitle = item.text.length > 50 ? item.text.substring(0, 50) + '...' : item.text;
 
   card.innerHTML = `
